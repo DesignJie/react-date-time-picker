@@ -1,22 +1,26 @@
-require('../src/less/input-moment.less');
-require('./app.less');
+import '../src/less/react-datetime-picker.less'
+import './app.less'
 
-var moment = require('moment');
-var React = require('react');
-var ReactDOM = require('react-dom');
-var InputMoment = require('../src/input-moment');
-var packageJson = require('../package.json');
+import moment from 'moment'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import InputMoment from '../src/react-datetime-picker'
+import packageJson from '../package.json'
 
-var App = React.createClass({
-  displayName: 'App',
+class App extends React.Component {
 
-  getInitialState() {
-    return {
+  constructor (props) {
+    super(props)
+    this.state = {
       m: moment()
-    };
-  },
+    }
+  };
 
-  render() {
+  handleChange = (m) => {
+    this.setState({m: m})
+  };
+
+  render () {
     return (
       <div className="app">
         <h1>{packageJson.name}</h1>
@@ -32,20 +36,11 @@ var App = React.createClass({
         <InputMoment
           moment={this.state.m}
           onChange={this.handleChange}
-          onSave={this.handleSave}
         />
         </form>
       </div>
     );
-  },
-
-  handleChange(m) {
-    this.setState({m: m});
-  },
-
-  handleSave() {
-    console.log('saved');
-  }
-});
+  };
+};
 
 ReactDOM.render(<App/>, document.getElementById('app'));

@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    'dist/input-moment': './index.js',
+    'dist/react-datetime-picker': './index.js',
     'example/bundle': './example/app.js',
   },
   output: {
@@ -9,7 +9,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel-loader'},
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          cacheDirectory: true,
+          plugins: ['transform-runtime'],
+          presets: ['es2015', 'react', 'stage-0']
+        }
+      },
       {test: /\.json$/, loader: 'json-loader'},
       {test: /\.css$/, loader: "style-loader!css-loader"},
       {test: /\.less$/, loader: "style-loader!css-loader!less-loader"}

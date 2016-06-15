@@ -1,1 +1,1 @@
-module.exports = require('./src/input-moment');
+module.exports = require('./src/react-datetime-picker');
