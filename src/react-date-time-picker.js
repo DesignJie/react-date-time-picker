@@ -1,5 +1,4 @@
 import cx from 'classnames'
-import moment from 'moment'
 import React from 'react'
 import Calendar from './calendar'
 import Time from './time'
