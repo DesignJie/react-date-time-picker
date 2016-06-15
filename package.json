@@ -9,6 +9,7 @@
     "blacklist": "^1.1.2",
     "classnames": "^2.2.0",
     "lodash": "^3.10.1",
+    "moment": "^2.10.6",
     "react-input-slider": "^1.5.0"
   },
   "description": "React datetime picker powered by momentjs",
@@ -55,7 +56,6 @@
   ],
   "name": "react-date-time-picker",
   "peerDependencies": {
-    "moment": "^2.10.6",
     "react": "^0.14.0 || ^15.0.0",
     "react-dom": "^0.14.0 || ^15.0.0"
   },
@@ -72,5 +72,5 @@
     "deploy": "npm run build && github-pages-deploy",
     "start": "webpack-dev-server -c --port=8888"
   },
-  "version": "0.0.2"
+  "version": "0.0.1"
 }
