@@ -61,7 +61,7 @@ class DateTimePicker extends React.Component {
     const m = this.props.moment
 
     return (
-      <div className="m-input-moment">
+      <div className="m-react-date-time-picker">
         { (this.props.timeOnly || this.props.dateOnly) &&
           <div className="options">
             { this.props.timeOnly &&

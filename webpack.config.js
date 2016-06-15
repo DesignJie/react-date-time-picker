@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    'dist/react-datetime-picker': './index.js',
+    'dist/react-date-time-picker': './index.js',
     'example/bundle': './example/app.js',
   },
   output: {

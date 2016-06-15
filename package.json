@@ -3,7 +3,7 @@
     "name": "Zach Waterfied (forked by Wang Zuo)"
   },
   "bugs": {
-    "url": "https://github.com/zlwaterfield/react-datetime-picker/issues"
+    "url": "https://github.com/zlwaterfield/react-date-time-picker/issues"
   },
   "dependencies": {
     "blacklist": "^1.1.2",
@@ -33,11 +33,11 @@
   "directories": {
     "example": "example"
   },
-  "main": "dist/react-datetime-picker.js",
+  "main": "dist/react-date-time-picker.js",
   "github-pages-deploy": {
     "src": "example"
   },
-  "homepage": "https://github.com/zlwaterfield/react-datetime-picker#readme",
+  "homepage": "https://github.com/zlwaterfield/react-date-time-picker#readme",
   "keywords": [
     "react",
     "react-component",
@@ -53,7 +53,7 @@
       "name": "Zach Waterfield"
     }
   ],
-  "name": "react-datetime-picker",
+  "name": "react-date-time-picker",
   "peerDependencies": {
     "moment": "^2.10.6",
     "react": "^0.14.0 || ^15.0.0",
@@ -61,12 +61,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zlwaterfield/react-datetime-picker.git"
+    "url": "git+https://github.com/zlwaterfield/react-date-time-picker.git"
   },
   "readmeFilename": "README.md",
   "scripts": {
     "build": "npm run build-js && npm run build-css",
-    "build-css": "lessc --clean-css src/less/react-datetime-picker.less dist/react-datetime-picker.css",
+    "build-css": "lessc --clean-css src/less/react-date-time-picker.less dist/react-date-time-picker.css",
     "build-js": "webpack -p",
     "clean": "rm dist/* && rm example/bundle*",
     "deploy": "npm run build && github-pages-deploy",

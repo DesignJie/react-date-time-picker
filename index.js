@@ -1,1 +1,1 @@
-module.exports = require('./src/react-datetime-picker');
+module.exports = require('./src/react-date-time-picker');
