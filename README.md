@@ -1,4 +1,4 @@
-# input-moment
+# react-datetime-picker
 React datetime picker powered by [momentjs](http://momentjs.com)
 
 The icon is from [ionicons](http://ionicons.com/).
